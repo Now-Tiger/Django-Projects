@@ -1,9 +1,8 @@
-__pycache__/*
+g_pycache__/*
 .py*
 .ini*
 imgs/*
 library/
 connect_mongo/
-todo/
 postgres/
 .vscode
