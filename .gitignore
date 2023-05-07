@@ -6,4 +6,5 @@ library/
 connect_mongo/
 postgres/
 .vscode
+todo_project/
 blogging/
