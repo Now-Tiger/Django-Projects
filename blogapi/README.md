@@ -11,6 +11,6 @@
 ![image](./imgs/blog-posts-apis.jpg)
 
 - In below image I've posted raw data via postman (basically performed __POST__ method)
-- result can be seen on above image, as the data refaltes on our _`/api/v1/`_ url and database.
+- result can be seen on above image, as the data reflect on our _`/api/v1/`_ url and database.
 
 ![image](./imgs/post-method-successfully.jpg)
