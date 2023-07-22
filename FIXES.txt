@@ -1,3 +1,0 @@
-** Fix Mysite blog app
-** Post are visible on the page.
--- Build from start to end.
