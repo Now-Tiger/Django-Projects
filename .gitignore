@@ -9,3 +9,4 @@ postgres/
 todo_project/
 # blogging/
 desktop.ini
+.DS_Store
