@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}{{ Prediction }}{% endblock %}
+{% block body %}
+<div class="container mt-5">
+    <main>
+            {% if res == 1 %}
+        <h1>{{ 'Email is Spam 🫠' }} </h1>
+        <hr class="container border border-primary border-2 opacity-50">
+            <p>{{ words }}</p>
+        {% else %}
+            <h1>{{ 'Email is Not a Spam 🚀' }}</h1>
+        {% endif %}
+    </main>
+</div>
+{% endblock body %}

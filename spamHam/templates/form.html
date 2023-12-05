@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% csrf_token %} 
+{% block title %}App{% endblock title %}
+{% block body %}
+<div class="container mt-3 pt-2">
+  <p class="display-6 ms-2 me-2 mt-2" style="color:brown">Submit your mail 📌</p>
+  {% csrf_token %}
+  <form action="prediction/" method="POST">
+  {% csrf_token %}
+    <div class="ms-2 me-2 mb-3 mt-2 w-75">
+      <label for="exampleFormControlInput1" class="form-label">Past your mail below...</label>
+      <!-- <input type="text" class="form-control" placeholder="John Doe" name="name"> -->
+      <textarea name="text" class="form-control" id="txtId" rows="5"></textarea>
+      <button type="submit" class="btn text-white bg-primary p-3.2 mb-2 mt-3" >Submit</button>
+    </div>
+  </form>
+</div>
+<div class="container">
+  <h1 class="text-blue ms-2 me-2">Sample mails with labels</h1>
+  <div class="card ms-2 me-2 bg-success text-white" style="height: 100wh;">
+    <div class="card-body">
+      <h5 class="card-title">Non Spam</h5>
+      <p class="card-text">Dear Tom--H tom.h@hotmail.com'Friday December 11 2032 5:41 
+        Hi, and greetings Swapnil here from BCG Gamma. 
+        I'm your interviewer for todays schedule. 
+        Please be present on the given time with all the necessary things that were mentioned in previous mail. 
+        Thanks!
+      </p>
+      <a href="#" class="btn bg-white text-black ">Copy</a>
+    </div>
+  </div>
+
+  <div class="card ms-2 me-2 mt-2 mb-3" style="max-width: 100wh">
+    <div class="card-body ">
+      <h5 class="card-title">Spam</h5>
+      <p class="card-text">   swapnil.narwade3@gmail.com Job For You vacancy@job.shine.com 
+        Do Not forward this mail, it contains links which allow direct login to your Shine account. 
+        Emailer Dear Swapnil, Recruiter from Mercedes Benz Research And Development India Pvt.Ltd. is actively hiring
+      </p>
+      <a href="#" class="btn btn-primary">Read</a>
+    </div>
+  </div>
+
+  <!-- <div class="card w-50 ms-5 mt-2">
+    <div class="card-body ">
+      <h5 class="card-title">Spam</h5>
+      <p class="card-text">THIS IS AN OFFICIAL NOTIFICATION OF FUNDS DEPOSITED IN YOUR NAME AND IT IS N=OTA SALES SOLICITATION.
+        I am professor Charles.c. Soludo governor, central bank of Nigeria ( =20CBN ). 
+        Thementioned bank is known for  the safekeeping of special and valuable package=sand baggage in trust for 
+        reputable clients that are honest and trustworthy.We work in collaboration with top firms and Governments of 
+        various =20countries aswe have earned a name as a service whose hallmarks in reliability andconfidentiality are 
+        revered. International missions and Embassies of the wor=ldhave used our services to satisfaction.A benefactor whose 
+        identity can not be disclosed because of the NonCircumvention and Non Disclosure Agreement that was signed with the 
+        saidbenefactor when the funds were being deposited in the Central Bank of Nigeri=a,made you the beneficiary of a 
+        package containing some amount of money andstated clearly that you should only be contacted when the time signed 
+        =20for it tobe in our care elapses and the time has already elapsed that is why you arebeing contacted.
+        The Non Circumvention and Non Disclosure Agreement signed with the benefacto=rmandates us to fully divulge and 
+        disclose the benefactor's identity 18 month=safter you, the beneficiary has received the funds.
+        The funds totals $5.000,000 (Five Million Dollars) i shall reconfirm to youare fully free of any liens, or 
+        encumbrances and are clean, clear and non-criminal origin and are available in the form of CASH. 
+        You are hereby advised to reconfirm your Full Contact Information forverification with information contained in our 
+        computer database as well asother relevant information in the format stated below so that the funds woul=dbe arranged 
+        by the deplomats who will be moving the funds from the =20Central Bankof Nigeria to be brought to you.I would also 
+        inform you clearly here that you must procure an affidavit ofclaim of ownership before the  comensment of the diplomat 
+        bringing the =20funds toyou, this you will be informed as soon as your information is received.
+        The  Diplomats shall accompany you to your bank (if you want them to) todeposit the funds in your name and submit 
+        all documentations of proof of theorigin of the funds in other to exonerate you from any form of investigation=sor 
+        interrogation and to authenticate the fact that the funds are clean and h=asno links whatsoever with either drugs or 
+        terrorism.The Requested Information is to ensure that no mistake or error is made and =itshould be forwardedin the 
+        manner stated below:
+      </p>
+      <a href="#" class="btn btn-primary">Copy</a>
+    </div>
+  </div> -->
+</div>
+{% endblock body %}
