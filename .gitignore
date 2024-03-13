@@ -1,4 +1,4 @@
-g_pycache__/*
+__pycache__/*
 .py*
 .ini*
 imgs/*
