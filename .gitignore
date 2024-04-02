@@ -12,3 +12,5 @@ todo_project/
 # blogging/
 desktop.ini
 .DS_Store
+spamHam/ml/__pycache__
+spamHam/spamHam/__pycache__
